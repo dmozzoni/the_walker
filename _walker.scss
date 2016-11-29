@@ -1,0 +1,10 @@
+img {
+  cursor: pointer;
+  margin-top: $img-top;
+  position: absolute;
+  width: $img-width;
+}
+
+
+
+.flip { @include scalex(-1); }

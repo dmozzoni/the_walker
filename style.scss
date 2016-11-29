@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Fanwood+Text');
+
+$img-width: 200px;
+$img-top:   230px;
+$font-stack: "Fanwood Text", serif;
+$quote-width: 400px;
+
+@mixin scalex($val) {
+  -webkit-transform: scaleX($val);
+  transform: scaleX($val);
+}
+
+
+
+
+body {
+  font-family: $font-stack;
+}
+
+@import 'walker';
+
+.quote {
+  @extend body;
+  border-left: 5px solid #808080;
+  color: #000000;
+  font-size: 1.85em;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-left: 6px;
+  text-align: left;
+  width: $quote-width;
+}
+
+span {
+  @extend body;
+  color: #000090;
+  float: right;
+  font-size: 1em;
+  text-align: right;
+}
