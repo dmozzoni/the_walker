@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>The Walker</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Fanwood+Text');
     img {
       position: absolute;
       width: 200px;
@@ -15,13 +17,36 @@
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
     }
+
+   .quote{
+     margin: 0 auto;
+     margin-top: 30px;
+     padding-left: 6px;
+     width: 400px;
+     font-family: "Fanwood Text", serif;
+     font-size: 1.85em;
+     border-left: 5px solid grey;
+     color: black;
+     text-align: left;
+   }
+
+   span {
+     color:navy;
+     font-size: 1em;
+     float:right;
+     text-align: right;
+   }
+
+  blockquote {}
+
+
   </style>
 </head>
 <body>
-  
+
   <img id="walker" src="http://media.giphy.com/media/XGnWMiVXL87Xa/giphy.gif">
 
   <script src="walker.js"></script>
-  
+
 </body>
 </html>
